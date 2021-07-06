@@ -1,0 +1,80 @@
+ /* Navbar in Css */
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  /* Navbar in Css end */
+  
+    .head1{
+      color: seagreen;
+      text-align: center;
+      text-decoration: slateblue;
+      margin-top: 10px;
+      font-size: 40px;
+      background-color: rgb(81, 137, 194);
+    }
+     /* form in css */
+  .form{
+    height:300px;
+    text-align: center;
+    align-content: center;
+    border-radius: 15%;
+    width:30%;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: darkgray;
+    margin-left: 500px;
+  }
+  .textbox{
+    padding: 20px;
+    border-radius: 2px;
+  }
+    /* footer */
+    footer{
+      background-color: purple;
+      justify-content: center;
+      padding:25px;
+    
+    }
+    .f1{
+      text-align: center;
+      color:royalblue;
+    }
+    .insta1{
+      height:25px;
+      width:25px;
+      
+    }
+    .email{
+      height:25px;
+      width:25px;
+      
+    }
+    .fb1{
+      height:25px;
+      width:25px;
+      
+    }
+    .div2{
+    display:inline;
+    margin-left:680px;
+    }

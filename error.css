@@ -1,0 +1,39 @@
+body{
+    opacity:0.6;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+}
+.head1{
+    color: aqua;
+    text-align: center;
+    margin:80px;
+    font-size: 25px;
+}
+.b1:hover{
+    color:green;
+}
+/* Navbar in Css */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  /* Navbar in Css end */

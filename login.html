@@ -1,0 +1,107 @@
+<?php
+$_SESSION = start();
+?>
+
+<html>
+    <head>
+        <title>login form</title>
+        <link rel="stylesheet" href="login.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script type="text/javascript">
+            function Captcha(){
+                var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+                var i;
+                for (i=0;i<6;i++){
+                  var a = alpha[Math.floor(Math.random() * alpha.length)];
+                  var b = alpha[Math.floor(Math.random() * alpha.length)];
+                  var c = alpha[Math.floor(Math.random() * alpha.length)];
+                  var d = alpha[Math.floor(Math.random() * alpha.length)];
+                  var e = alpha[Math.floor(Math.random() * alpha.length)];
+                  var f = alpha[Math.floor(Math.random() * alpha.length)];
+                  var g = alpha[Math.floor(Math.random() * alpha.length)];
+                 }
+               var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+               document.getElementById("mainCaptcha").value = code
+             }
+             function Valid(){
+                           var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+                           var string2 = removeSpaces(document.getElementById('txtInput').value);
+                           if (string1 != string2){
+                              alert("Please enter correct captcha");
+                             }
+             }
+             function removeSpaces(string){
+               return string.split(' ').join('');
+             }
+        </script>   
+    </head>
+    <body>
+              <!-- Heading In Website -->
+              <h1 class="head1">University Hospital</h1>
+        
+              <!-- Navbar in website -->
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+      <!-- login form -->
+        <center><h1 style="font-size: 30px">Login</h1></center>
+        <form method="POST" action="form.php" class="form" >
+            <div class="loginbox">
+                <div class="textbox">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Registration No." name="Rollno" value="">
+                </div>
+
+                <div class="textbox">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="password" name="password" value="">
+                </div>
+                <div class="textbox" style="align-items: center;margin-left: 120px;">
+                    <div onload="Captcha();">
+                        <table>
+                          <tr>
+                           <td>
+                                 Text Captcha<br />
+                           </td>
+                          </tr>
+                          <tr>
+                           <td>
+                             <input type="text" id="mainCaptcha"/>
+                              <input type="button" id="refresh" value="Refresh" onclick="Captcha();" />
+                           </td>
+                          </tr>
+                          <tr>
+                           <td>
+                            <input type="text" id="txtInput"/>    
+                          </td>
+                         </tr>
+                      </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="signinbtn">
+                <input type="button" name="" value="sign in" onclick=valid()>
+            </div>
+            <div class="new">
+                <p> new user ?
+                    <a href="./register.html">sign up</a>
+                </p>
+            </div>
+
+        </form>
+        <footer>
+            <h3 class="f1">00-123456678</h2>
+            <h3 class="f1">hospital1223455@gmail.com</h3>
+            <div class="div2">
+            <img src="instagram.svg" alt="Be patience" class="insta1">
+            <img src="email.png" alt="Be patience" class="email">
+            <img src="fb1.png" alt="Be patoence" class="fb1">
+          </div>     </footer>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+
+ body{
+   background-color:rgb(157, 238, 76);
+ }
+
+ /* Navbar in Css */
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/* Navbar in Css end */
+
+  .head1{
+    color:blue;
+    text-align: center;
+    text-decoration: slateblue;
+    margin-top: 10px;
+    font-size: 40px;
+    background-color: rgb(81, 137, 194);
+  }
+
+   .imag1{
+     height:400px;
+     width:100%;
+     margin-top:30px;
+   }
+   .div1{
+     background-color: lightgrey;
+   }
+   .head2{
+     color:tomato;
+     font-size: 35px;
+     background-color: yellowgreen;
+     text-align: center;
+   }
+   p{
+     font-size: 25px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color:yellow;
+     background-color: violet;
+     height:400px;
+     width:70%;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     width:100%;
+    }
+/* form in css */
+.form{
+  height:300px;
+  text-align: center;
+  align-content: center;
+  border-radius: 15%;
+  background-color: cyan;
+}
+    /* Appointment */
+    .div3{
+      background-color: silver;
+      height:200px;
+      width:100%;
+      align-content: center;
+      text-align: center;
+    }
+    .head2{
+      color:royalblue;
+    }
+    .para{
+      color:white;
+      font-size: 25px;
+      font-style: italic;
+      text-align: center; 
+      width:100%;
+    }
+    /* image in paragraph */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+      margin-left: 150px;
+    }
+    
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      align-items: center;
+    }
+    .img1{
+         height:300;
+         width:25%;
+         padding:20px;
+    }
+/* 2 image with  */
+    .row{
+      background-color: rgb(81, 137, 194);
+    }
+    footer{
+      background-color: purple;
+      justify-content: center;
+      padding:25px;
+    
+    }
+    .f1{
+      text-align: center;
+      color:royalblue;
+    }
+    .insta1{
+      height:25px;
+      width:25px;
+      
+    }
+    .email{
+      height:25px;
+      width:25px;
+      
+    }
+    .fb1{
+      height:25px;
+      width:25px;
+      
+    }
+    .div2{
+    display:inline;
+    margin-left:680px;
+    }
